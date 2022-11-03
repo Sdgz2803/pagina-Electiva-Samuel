@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Envios Margarita</title>
+</head>
+<body>
+    <header>
+        <label class="logo">Envios Margarita</label>
+        <ul>
+            <li><a class="item"href="#">Inicio</a></li>
+            <li><a class="item"href="#">Sedes</a></li>
+            <li><a class="item"href="#">Precios</a></li>
+            <li><a class="item"href="#">contactos</a></li>
+        </ul>
+    </header>
+    <main>
+        <!--formulario-->
+        <form name="formulario" action="" id="foru" method="get" onsubmit="return calcula();">
+            <section class="form-re">
+                <!--inputs cajas de texto-->   
+                <h4>formulario de envio</h4>
+                <input class="control"type="text" name="nombre" id="nombre" placeholder="Ingrese nombre">
+                <input class="control"type="text" name="apellido" id="apellido" placeholder="Ingrese apellido">
+                <input class="control"type="text" name="cedula" id="cedula" placeholder="Ingrese cedula">
+                <input class="control"type="text" name="edad" id="edad" placeholder="Ingrese edad">
+                <input class="control"type="text" name="telefono" id="telefono" placeholder="Ingrese telefono">
+                <input class="control"type="text" name="correo" id="correo" placeholder="Ingrese correo">
+                <!--lista desplegable-->
+                <p>Selecione destino del paquete</p>
+                <select name="Sede" id="Sede" class="control">
+                    <option value="">Selecciona El destino</option>
+                    <option value="0" id="distrito">Distrito capital</option>
+                    <option value="1" id="margarita">Margarita</option>
+                    <option value="2" id="lara">Lara</option>
+                </select>
+                <!--radio buttoms-->
+                <p>Selecione tipo de paquete</p>
+                <label>
+                    <input class="tipo"type="radio" name="ligero" id="ligero" value="0">Ligero
+                </label>
+                <label>
+                    <input class="tipo"type="radio" name="medio" id="medio" value="1">Medio
+                </label>
+                <label>
+                    <input class="tipo"type="radio" name="pesado" id="pesado" value="2">Pesado
+                </label>
+
+                <!--checkbuttom-->
+                <p>estoy de acuerdo con <a href="#" class="ter">Terminos y condiciones</a> </p>
+                <input class="chek" type="checkbox" id="chek">
+                
+                <!--enviar y limpiar-->
+                <button class="boton" type="submit" id="boton">Enviar Datos</button>
+                <button class="boton" type="reset"> Limpiar Formulario</button>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <h2>Informacion de contacto</h2>
+        <h3>Nombre: Samuel Gomez</h3>
+        <h3>Correo: sdgz0338@gmail.com</h3>
+        <h3>Linkedin: Samuel Gomez</h3>  
+    </footer>
+</body>
+</html>
